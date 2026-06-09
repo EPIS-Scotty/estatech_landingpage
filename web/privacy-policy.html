@@ -2,6 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (function () {
+        var baseHref = "/";
+        if (location.hostname.endsWith("github.io")) {
+          var segment = location.pathname.split("/").filter(Boolean)[0];
+          if (segment) baseHref = "/" + segment + "/";
+        }
+        var base = document.createElement("base");
+        base.href = baseHref;
+        document.head.appendChild(base);
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Scotty by Estatech — Privacy Policy" />
     <title>Privacy Policy — Scotty by Estatech</title>
@@ -24,6 +36,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/tokens.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
