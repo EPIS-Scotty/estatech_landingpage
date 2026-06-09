@@ -1,0 +1,32 @@
+:root {
+  --estatech-navy: #15324c;
+  --estatech-blue: #255c8c;
+  --estatech-sky: #64b5f6;
+  --estatech-nav: #4387b9;
+  --estatech-surface-card: rgba(21, 38, 56, 0.92);
+  --estatech-surface-elevated: rgba(18, 34, 52, 0.88);
+
+  --text-primary: #ffffff;
+  --text-tertiary: #e8eef4;
+  --text-secondary: #c5d3e0;
+  --text-muted: rgba(255, 255, 255, 0.78);
+  --text-on-surface: #dce4ec;
+  --text-on-surface-muted: #a8b9c9;
+
+  --shadow-card: 0 4px 4px rgba(0, 0, 0, 0.25);
+  --radius-card: 10px;
+  --radius-sm: 5px;
+  --radius-pill: 999px;
+
+  --font-sans: "Roboto", system-ui, -apple-system, sans-serif;
+
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  --max-width: 1120px;
+  --nav-height: 72px;
+}
