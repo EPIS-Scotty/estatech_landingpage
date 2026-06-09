@@ -166,21 +166,27 @@ body {
 .coming-soon {
   display: block;
   position: relative;
-  background: linear-gradient(
-    110deg,
-    #ffffff 0%,
-    #ffffff 30%,
-    var(--estatech-sky) 50%,
-    #ffffff 70%,
-    #ffffff 100%
-  );
-  background-size: 220% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  filter: drop-shadow(0 2px 14px rgba(21, 50, 76, 0.5));
-  animation: shimmer-text 4.5s ease-in-out infinite;
+  color: var(--text-primary);
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .coming-soon {
+    background: linear-gradient(
+      110deg,
+      #ffffff 0%,
+      #ffffff 30%,
+      var(--estatech-sky) 50%,
+      #ffffff 70%,
+      #ffffff 100%
+    );
+    background-size: 220% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    filter: drop-shadow(0 2px 14px rgba(21, 50, 76, 0.5));
+    animation: shimmer-text 4.5s ease-in-out infinite;
+  }
 }
 
 .coming-soon-dots {

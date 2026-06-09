@@ -4,14 +4,23 @@
     <meta charset="UTF-8" />
     <script>
       (function () {
-        var baseHref = "/";
+        var prefix = "";
         if (location.hostname.endsWith("github.io")) {
           var segment = location.pathname.split("/").filter(Boolean)[0];
-          if (segment) baseHref = "/" + segment + "/";
+          if (segment && segment.indexOf(".") === -1) {
+            prefix = "/" + segment;
+          }
         }
-        var base = document.createElement("base");
-        base.href = baseHref;
-        document.head.appendChild(base);
+        var root = location.origin + prefix + "/";
+        document.write('<base href="' + root + '">');
+        document.write(
+          '<link rel="stylesheet" href="' +
+            prefix +
+            '/css/tokens.css">' +
+            '<link rel="stylesheet" href="' +
+            prefix +
+            '/css/styles.css">'
+        );
       })();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -36,8 +45,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/tokens.css" />
-    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="bg-gradient" aria-hidden="true"></div>
