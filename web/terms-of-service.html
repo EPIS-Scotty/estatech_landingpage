@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Scotty by Estatech — Terms of Service" />
+    <title>Terms of Service — Scotty by Estatech</title>
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="bg-gradient" aria-hidden="true"></div>
+    <div class="bg-dots" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb--one" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb--two" aria-hidden="true"></div>
+
+    <div class="page page--legal">
+      <header class="container nav">
+        <a class="logo" href="index.html" aria-label="Scotty by Estatech home">
+          <img
+            class="logo-img"
+            src="assets/images/logos/scotty-logo-white.svg"
+            alt="Scotty"
+            width="174"
+            height="80"
+          />
+        </a>
+        <a class="nav-cta" href="index.html">Back to home</a>
+      </header>
+
+      <main class="container legal">
+        <article class="legal-card">
+          <header class="legal-header">
+            <p class="legal-eyebrow">Scotty by Estatech</p>
+            <h1 class="legal-title">Terms of Service</h1>
+            <p class="legal-meta"><strong>Effective Date: June 8, 2026</strong></p>
+          </header>
+
+          <div class="legal-body">
+            <section class="legal-section">
+              <h2>1. Acceptance of Terms</h2>
+              <p>
+                By downloading and using the Scotty app, you agree to these
+                Terms of Service. The app is designed to interface with smart home
+                hardware and automation services provided by Estatech Co, Ltd.
+              </p>
+            </section>
+
+            <section class="legal-section">
+              <h2>2. App Functionality and Background Operations</h2>
+              <p>
+                To function correctly, Scotty requires certain permissions,
+                including Bluetooth access and background processing capabilities.
+                You acknowledge that restricting these permissions or enforcing
+                strict battery optimizations on your device may result in delayed
+                notifications or the inability to operate your smart door lock
+                remotely.
+              </p>
+            </section>
+
+            <section class="legal-section">
+              <h2>3. User Responsibilities</h2>
+              <ul>
+                <li>
+                  Account Security: You are responsible for maintaining the
+                  confidentiality of your login credentials.
+                </li>
+                <li>
+                  Physical Backup: While Scotty is designed for high reliability,
+                  electronic smart locks are subject to battery depletion, network
+                  outages, or device failure. You agree to always maintain an
+                  alternative method of entry (e.g., a PIN/ passcode) for your
+                  premises.
+                </li>
+              </ul>
+            </section>
+
+            <section class="legal-section">
+              <h2>4. Limitation of Liability</h2>
+              <p>
+                To the maximum extent permitted by law, Estatech Co, Ltd. shall
+                not be liable for any indirect, incidental, or consequential
+                damages arising from the use or inability to use the Scotty app,
+                including but not limited to lockouts, hardware failure, or
+                unauthorized access to your premises due to compromised user
+                credentials.
+              </p>
+            </section>
+          </div>
+        </article>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <p class="footer-copy">
+            &copy; <span id="year"></span> Estatech. All rights reserved.
+          </p>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html" aria-current="page">Terms of Service</a></li>
+            <li><a href="mailto:estatech.co@gmail.com">Contact</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
